@@ -36,9 +36,5 @@ def main(input):
         
         i += 1
 
-
-
-
-
 input = "ejemplo.txt"
 main(input)
