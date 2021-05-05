@@ -1,9 +1,11 @@
 from contrato import Contrato
 from contrato import get_fin_contrato
 
-def main(input):
+def main():
 
-    file = open(input,"r")
+    print("ingrese el nombre del archivo de contratos:")
+    filename = input()
+    file = open(filename,"r")
     contratos = []
 
     #recorro el archivo y meto cada contrato en la lista de contratos y obtengo la cantidad de elementos
@@ -11,7 +13,6 @@ def main(input):
     for line in file:
         datos = line.split(",")
         c = Contrato(datos[0],int(datos[1]),int(datos[2]))
-        #print(c.nombre, c.inicio, c.fin)
         contratos.append(c)
         n += 1
 
@@ -36,5 +37,4 @@ def main(input):
         
         i += 1
 
-input = "ejemplo.txt"
-main(input)
+main()
