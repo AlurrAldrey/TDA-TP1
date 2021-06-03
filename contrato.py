@@ -8,5 +8,9 @@ class Contrato:
 
 def get_fin_contrato(c):
     return c.fin
+
+def get_inicio_contrato(c):
+    return c.inicio
+
           
             
